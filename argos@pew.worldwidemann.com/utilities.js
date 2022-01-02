@@ -61,7 +61,7 @@ function parseFilename(filename) {
     let position = positionPart.substring(0, positionPart.length - 1);
     let box = positionPart.substring(positionPart.length - 1);
 
-    if (BOXES.hasOwnProperty(box) && /^\d*$/.test(position)) {
+    if (BOXES.hasOwnProperty(box) && /^-?\d*$/.test(position)) {
       settings.box = BOXES[box];
 
       if (position.length > 0)
