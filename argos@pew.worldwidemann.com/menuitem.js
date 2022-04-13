@@ -21,7 +21,7 @@ const Utilities = Extension.imports.utilities;
 const AltSwitcher = Utilities.AltSwitcher;
 
 // Menu entry representing a docker container
-const ArgosMenuItem = GObject.registerClass(
+var ArgosMenuItem = GObject.registerClass(
   {
       GTypeName: 'ArgosMenuItem'
   },
